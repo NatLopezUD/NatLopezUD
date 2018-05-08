@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
-{% for post in site.posts %}
-  <a href="">{{post.title}}</a>
+<ul>
+{% for post in site.categories.zab %}
+  <li><a href="">{{post.title}}</a></li>
   {% endfor %}
