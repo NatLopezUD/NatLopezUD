@@ -9,6 +9,9 @@ layout: page
   
     <h3>Images</h3>
 {% for post in site.categories.vab %}
+   {% if post.images %}
+        <img src="{{ project.images }}"/>
+{% else %}
   <li><a href="{{post.url | prepend: site.base.url }}"{{post.title}}</a>">{{post.title}}</a></li>
   {% endfor %}
 </ul>
